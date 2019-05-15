@@ -18,5 +18,6 @@
   "homepage": "https://github.com/twumm/Newsfeed-Components#readme",
   "devDependencies": {
     "eslint": "^5.16.0"
-  }
+  },
+  "dependencies": {}
 }
