@@ -141,6 +141,7 @@ articlesDiv.insertAdjacentElement('afterend', formDiv);
 
 const formElement = document.createElement('form')
 formElement.setAttribute('action', 'submit');
+formElement.setAttribute('style', 'display: flex; justify-content: center; flex-direction: column; margin-top: 40px;');
 const headingInput = document.createElement('input');
 headingInput.setAttribute('type', 'text')
 headingInput.setAttribute('name', 'heading')
