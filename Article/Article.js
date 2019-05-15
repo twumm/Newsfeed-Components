@@ -47,13 +47,33 @@ articles.forEach(article => {
 
 // STRETCH GOAL - Article Builder Component
 class ArticleBuilder {
-  constructor(article) {
-    this.heading = article.heading;
-    this.paragraphs = article.paragraphs;
-    this.date = article.date;
+  constructor(article, data) {
+    this.article = article
+    this.heading = data.heading;
+    this.paragraphs = data.paragraphs;
+    this.date = data.date;
   }
 
-  addArticle() {
-    
+  buildArticle() {
+    // initiate and build heading
+    const heading = document.createElement('h2');
+    heading.textContent = this.heading
+    this.article.append(heading);
+  }
+
+  buildParagraphElement() {
+    // initiate and build paragraphs
+    const paragraph = document.createElement('p');
+    this.paragraphs.forEach(paragraphContent => {
+      paragraph.textContent = paragraphContent;
+      this.article.append(paragraph);
+    })
+  }
+
+  buildDateElement() {
+    // initiate and build date tag with p
+    const date = document.createElement('p');
+    date.textContent = this.date;
+    this.article.append(date);
   }
 }
