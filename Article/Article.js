@@ -106,3 +106,7 @@ const articleData = [
     date: 'Nov 5th, 2017'
   },
 ];
+
+articleData.forEach(data => {
+  new ArticleBuilder(articlesDiv, data);
+})
