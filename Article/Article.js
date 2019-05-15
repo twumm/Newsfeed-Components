@@ -137,5 +137,13 @@ articleData.forEach(data => {
 const formDiv = document.createElement('div');
 formDiv.setAttribute('style', 'margin: 20px 10%; padding: 0 20px 25px;');
 
-articlesDiv.insertAdjacentElement('afterend', formDiv)
-;
+articlesDiv.insertAdjacentElement('afterend', formDiv);
+
+const formElement = document.createElement('form')
+formElement.setAttribute('action', 'submit');
+const headingInput = document.createElement('input');
+headingInput.setAttribute('type', 'text')
+headingInput.setAttribute('name', 'heading')
+const paragraphInput = document.createElement('input');
+paragraphInput.setAttribute('type', 'text')
+paragraphInput.setAttribute('name', 'paragraph')
