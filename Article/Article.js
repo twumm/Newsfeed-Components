@@ -44,3 +44,16 @@ let articles = document.querySelectorAll('.article');
 articles.forEach(article => {
   new Article(article);
 });
+
+// STRETCH GOAL - Article Builder Component
+class ArticleBuilder {
+  constructor(article) {
+    this.heading = article.heading;
+    this.paragraphs = article.paragraphs;
+    this.date = article.date;
+  }
+
+  addArticle() {
+    
+  }
+}
