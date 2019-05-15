@@ -146,11 +146,13 @@ formElement.setAttribute('style', 'display: flex; justify-content: center; flex-
 const headingInput = document.createElement('input');
 headingInput.setAttribute('type', 'text')
 headingInput.setAttribute('name', 'heading')
+headingInput.required = true;
 headingInput.setAttribute('placeholder', 'Enter Article Heading');
 
 const paragraphInput = document.createElement('input');
 paragraphInput.setAttribute('type', 'text');
 paragraphInput.setAttribute('name', 'paragraph');
+paragraphInput.required = true;
 paragraphInput.setAttribute('placeholder', 'Enter Article Content');
 paragraphInput.setAttribute('style', 'margin-top: 10px');
 
