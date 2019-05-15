@@ -48,7 +48,8 @@ articles.forEach(article => {
 // STRETCH GOAL - Article Builder Component
 class ArticleBuilder {
   constructor(article, data) {
-    this.article = article
+    // console.log(data)
+    this.article = article;
     this.heading = data.heading;
     this.paragraphs = data.paragraphs;
     this.date = data.date;
@@ -82,3 +83,26 @@ class ArticleBuilder {
     this.article.append(date);
   }
 }
+
+let articlesDiv = document.querySelector('.articles');
+
+const articleData = [
+  {
+    heading: 'Sheep',
+    paragraphs: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'],
+    date: 'Nov 5th, 2017'
+  },
+  {
+    heading: 'Lambs',
+    paragraphs: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'],
+    date: 'Nov 5th, 2017'
+  },
+  {
+    heading: 'Wolves',
+    paragraphs: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'],
+    date: 'Nov 5th, 2017'
+  },
+];
