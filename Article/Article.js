@@ -54,17 +54,21 @@ class ArticleBuilder {
     this.paragraphs = data.paragraphs;
     this.date = data.date;
 
+    this.currentArticleDiv = document.createElement('div');
+
     // Initialize building of elements
     this.buildHeading();
     this.buildParagraphElement();
     this.buildDateElement();
+    this.buildMainArticleElement();
   }
 
   buildHeading() {
     // initiate and build heading
     const heading = document.createElement('h2');
     heading.textContent = this.heading
-    this.article.append(heading);
+    // this.article.append(heading);
+    this.currentArticleDiv.append(heading);
   }
 
   buildParagraphElement() {
@@ -72,7 +76,8 @@ class ArticleBuilder {
     const paragraph = document.createElement('p');
     this.paragraphs.forEach(paragraphContent => {
       paragraph.textContent = paragraphContent;
-      this.article.append(paragraph);
+      // this.article.append(paragraph);
+      this.currentArticleDiv.append(paragraph);
     })
   }
 
@@ -80,7 +85,17 @@ class ArticleBuilder {
     // initiate and build date tag with p
     const date = document.createElement('p');
     date.textContent = this.date;
-    this.article.append(date);
+    // this.article.append(date);
+    this.currentArticleDiv.append(date);
+  }
+
+  buildMainArticleElement() {
+    // initiate and build article tag with div
+    // const article = document.createElement('div');
+    // article.classList.add('article')
+    // article.appendChild
+    this.currentArticleDiv.classList.add('article');
+    this.article.append(this.currentArticleDiv);
   }
 }
 
