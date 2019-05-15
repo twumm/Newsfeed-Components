@@ -40,10 +40,14 @@ class Article {
 
 */
 
-let articles = document.querySelectorAll('.article');
-articles.forEach(article => {
-  new Article(article);
-});
+window.addEventListener('load', () => {
+  let articles = document.querySelectorAll('.article');
+  console.log(articles);
+  articles.forEach(article => {
+    new Article(article);
+  });
+})
+
 
 // STRETCH GOAL - Article Builder Component
 class ArticleBuilder {
