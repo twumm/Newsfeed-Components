@@ -4,7 +4,6 @@ class Article {
   constructor(domElement) {
     // assign this.domElement to the passed in domElement
     this.domElement = domElement;
-    console.log(articles.length)
     // create a reference to the ".expandButton" class. 
     this.expandButton = this.domElement.querySelector('.expandButton');
     // Using your expandButton reference, update the text on your expandButton to say "expand"
@@ -17,8 +16,8 @@ class Article {
     // STRETCH GOALS - Close article
     this.close = document.createElement('span');
     this.close.textContent = 'Close';
-    this.close.setAttribute('style', 'position: absolute; top: 5px; left: 92%; font-size: 12px;' + 
-      'color: red; cursor: pointer')
+    this.close.setAttribute('style', 'position: absolute; top: 5px; left: 92%; font-size: 12px;' +
+      'color: red; cursor: pointer');
     this.domElement.append(this.close);
     this.close.addEventListener('click', () => this.closeArticle())
   }
@@ -44,4 +43,4 @@ class Article {
 let articles = document.querySelectorAll('.article');
 articles.forEach(article => {
   new Article(article);
-})
+});
