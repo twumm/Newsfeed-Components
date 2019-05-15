@@ -52,6 +52,11 @@ class ArticleBuilder {
     this.heading = data.heading;
     this.paragraphs = data.paragraphs;
     this.date = data.date;
+
+    // Initialize building of elements
+    this.buildArticle();
+    this.buildParagraphElement();
+    this.buildDateElement();
   }
 
   buildArticle() {
