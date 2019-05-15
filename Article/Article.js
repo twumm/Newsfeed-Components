@@ -42,7 +42,7 @@ class Article {
 
 window.addEventListener('load', () => {
   let articles = document.querySelectorAll('.article');
-  console.log(articles);
+  // console.log(articles);
   articles.forEach(article => {
     new Article(article);
   });
@@ -163,3 +163,15 @@ formDiv.append(formElement);
 formElement.append(headingInput);
 formElement.append(paragraphInput);
 formElement.append(submitButton);
+
+submitButton.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  const formData = {
+    heading: headingInput.value,
+    paragraphs: [paragraphInput.value],
+    date: new Date
+  }
+
+  new ArticleBuilder(articlesDiv, formData);
+})
