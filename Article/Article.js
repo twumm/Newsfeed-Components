@@ -98,7 +98,10 @@ class ArticleBuilder {
     // const article = document.createElement('div');
     // article.classList.add('article')
     // article.appendChild
+    const expandSpan = document.createElement('span');
+    expandSpan.classList.add('expandButton');
     this.currentArticleDiv.classList.add('article');
+    this.currentArticleDiv.append(expandSpan);
     this.article.append(this.currentArticleDiv);
   }
 }
