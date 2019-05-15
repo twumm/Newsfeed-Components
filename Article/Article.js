@@ -140,15 +140,26 @@ formDiv.setAttribute('style', 'margin: 20px 10%; padding: 0 20px 25px;');
 articlesDiv.insertAdjacentElement('afterend', formDiv);
 
 const formElement = document.createElement('form')
-formElement.setAttribute('action', 'submit');
+// formElement.setAttribute('action', 'submit');
 formElement.setAttribute('style', 'display: flex; justify-content: center; flex-direction: column; margin-top: 40px;');
+
 const headingInput = document.createElement('input');
 headingInput.setAttribute('type', 'text')
 headingInput.setAttribute('name', 'heading')
+headingInput.setAttribute('placeholder', 'Enter Article Heading');
+
 const paragraphInput = document.createElement('input');
-paragraphInput.setAttribute('type', 'text')
-paragraphInput.setAttribute('name', 'paragraph')
+paragraphInput.setAttribute('type', 'text');
+paragraphInput.setAttribute('name', 'paragraph');
+paragraphInput.setAttribute('placeholder', 'Enter Article Content');
+paragraphInput.setAttribute('style', 'margin-top: 10px');
+
+const submitButton = document.createElement('input');
+submitButton.setAttribute('type', 'submit');
+submitButton.setAttribute('value', 'Upload');
+submitButton.setAttribute('style', 'margin: 15px auto; width: 40%');
 
 formDiv.append(formElement);
 formElement.append(headingInput);
 formElement.append(paragraphInput);
+formElement.append(submitButton);
