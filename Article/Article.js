@@ -132,3 +132,10 @@ const articleData = [
 articleData.forEach(data => {
   new ArticleBuilder(articlesDiv, data);
 })
+
+// STRETCH GOALS - Add forms submit articles
+const formDiv = document.createElement('div');
+formDiv.setAttribute('style', 'margin: 20px 10%; padding: 0 20px 25px;');
+
+articlesDiv.insertAdjacentElement('afterend', formDiv)
+;
