@@ -55,12 +55,12 @@ class ArticleBuilder {
     this.date = data.date;
 
     // Initialize building of elements
-    this.buildArticle();
+    this.buildHeading();
     this.buildParagraphElement();
     this.buildDateElement();
   }
 
-  buildArticle() {
+  buildHeading() {
     // initiate and build heading
     const heading = document.createElement('h2');
     heading.textContent = this.heading
