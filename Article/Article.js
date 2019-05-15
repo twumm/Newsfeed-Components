@@ -147,3 +147,7 @@ headingInput.setAttribute('name', 'heading')
 const paragraphInput = document.createElement('input');
 paragraphInput.setAttribute('type', 'text')
 paragraphInput.setAttribute('name', 'paragraph')
+
+formDiv.append(formElement);
+formElement.append(headingInput);
+formElement.append(paragraphInput);
