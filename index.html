@@ -1,116 +1,225 @@
 <!-- Do not add anything to the HTML until Part 3 of the project -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Lambda School Newsfeed</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="./CSS/index.css" />
-    <script src="./Menu/Menu.js" async></script>
-    <script src="./Article/Article.js" async></script>
-  </head>
-  <body>
-    <div class="header">
-      <img class="menu-button" src="./assets/menu.png"/>
-      <h1>Lambda School Newsfeed</h1>
-    </div>
-    <div class="menu">
-      <ul>
-        <li>Students</li>
-        <li>Faculty</li>
-        <li>What's New</li>
-        <li>Tech Trends</li>
-        <li>Music</li>
-        <li>Log Out</li>
-      </ul>
-    </div>
-    <div class="articles">
-      <div class="article">
-        <h2>Lambda School Students: "We're the best!"</h2>
-        <p class="date">Nov 5th, 2017</p>
 
-        <p>Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
-        moff wicket tatooine luke. Solo wampa wampa calrissian yoda moff. Darth grievous darth gonk darth hutt. Darth baba skywalker
-        watto fett jango maul han. Mon ewok sidious sidious lando kenobi grievous gamorrean solo. Yoda wedge utapau darth calamari.
-        Hutt calamari darth jabba. Darth dooku amidala organa moff. Boba darth binks solo hutt skywalker dantooine skywalker. Qui-gonn
+<head>
+  <title>Lambda School Newsfeed</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="./CSS/index.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script src="./Menu/Menu.js" async></script>
+  <script src="./Article/Article.js" async></script>
+</head>
+
+<body>
+  <div class="header">
+    <img class="menu-button" src="./assets/menu.png" />
+    <h1>Lambda School Newsfeed</h1>
+  </div>
+  <div class="menu">
+    <ul>
+      <li>Students</li>
+      <li>Faculty</li>
+      <li>What's New</li>
+      <li>Tech Trends</li>
+      <li>Music</li>
+      <li>Log Out</li>
+    </ul>
+  </div>
+  <div class="articles">
+    <div class="article">
+      <h2>Lambda School Students: "We're the best!"</h2>
+      <p class="date">Nov 5th, 2017</p>
+
+      <p>Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura
+        skywalker lando
+        moff wicket tatooine luke. Solo wampa wampa calrissian yoda moff. Darth grievous darth gonk darth hutt. Darth
+        baba skywalker
+        watto fett jango maul han. Mon ewok sidious sidious lando kenobi grievous gamorrean solo. Yoda wedge utapau
+        darth calamari.
+        Hutt calamari darth jabba. Darth dooku amidala organa moff. Boba darth binks solo hutt skywalker dantooine
+        skywalker. Qui-gonn
         jar twi'lek jinn leia jango skywalker mon. </p>
 
-        <p>Grievous fett calamari anakin skywalker hutt. Alderaan darth kenobi darth r2-d2
-        windu mothma. Sidious darth calamari moff. Wampa mothma sith wedge solo mara. Darth gonk maul sith moff chewbacca palpatine
-        mace amidala. C-3po solo skywalker anakin yoda leia. Maul wampa bespin watto jade ewok darth jabba. Lando dantooine moff
-        k-3po dantooine luke. Fisto mandalore darth wedge c-3p0 ahsoka. Secura moff palpatine fett. Anakin sith darth darth. Moff
-        solo leia ben ponda jade. Binks jango aayla skywalker skywalker cade. Mustafar darth ventress anakin watto. Yavin jawa sebulba
+      <p>Grievous fett calamari anakin skywalker hutt. Alderaan darth kenobi darth r2-d2
+        windu mothma. Sidious darth calamari moff. Wampa mothma sith wedge solo mara. Darth gonk maul sith moff
+        chewbacca palpatine
+        mace amidala. C-3po solo skywalker anakin yoda leia. Maul wampa bespin watto jade ewok darth jabba. Lando
+        dantooine moff
+        k-3po dantooine luke. Fisto mandalore darth wedge c-3p0 ahsoka. Secura moff palpatine fett. Anakin sith darth
+        darth. Moff
+        solo leia ben ponda jade. Binks jango aayla skywalker skywalker cade. Mustafar darth ventress anakin watto.
+        Yavin jawa sebulba
         owen jinn tatooine sith organa.</p>
 
-        <p>Dagobah hutt jawa leia calamari ventress skywalker yoda. Binks wicket hutt coruscant sidious
-        naboo ackbar tatooine. Hutt lars padmé darth. Maul solo darth darth jabba qui-gon chewbacca darth maul. Moff baba wicket
-        han. C-3po antilles moff qui-gon ahsoka aayla dooku amidala. Palpatine droid amidala droid k-3po twi'lek padmé wookiee. Leia
+      <p>Dagobah hutt jawa leia calamari ventress skywalker yoda. Binks wicket hutt coruscant sidious
+        naboo ackbar tatooine. Hutt lars padmé darth. Maul solo darth darth jabba qui-gon chewbacca darth maul. Moff
+        baba wicket
+        han. C-3po antilles moff qui-gon ahsoka aayla dooku amidala. Palpatine droid amidala droid k-3po twi'lek padmé
+        wookiee. Leia
         moff calamari mon obi-wan. Solo grievous lando coruscant. Jinn darth palpatine obi-wan mon.</p>
-        <span class='expandButton'></span>
-      </div>
-      <div class="article">
-        <h2>Javascript and You, ES6</h2>
-        <p class="date">Nov 7th, 2017</p>
-        <p>Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost
-        Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot
-        snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods
-        yew pumpkin juice phials Ravenclaw’s Diadem 10 galleons Thieves Downfall. Ministry-of-Magic mimubulus mimbletonia Pigwidgeon
-        knut phoenix feather other minister Azkaban. Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed.
+      <span class='expandButton'></span>
+    </div>
+    <div class="article">
+      <h2>Javascript and You, ES6</h2>
+      <p class="date">Nov 7th, 2017</p>
+      <p>Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur
+        portkey ghost
+        Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus.
+        Padfoot
+        snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell
+        lies. Mudbloods
+        yew pumpkin juice phials Ravenclaw’s Diadem 10 galleons Thieves Downfall. Ministry-of-Magic mimubulus
+        mimbletonia Pigwidgeon
+        knut phoenix feather other minister Azkaban. Hedwig Daily Prophet treacle tart full-moon Ollivanders
+        You-Know-Who cursed.
         Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.</p>
-      
-        <p>Boggarts lavender robes, Hermione Granger Fantastic Beasts and Where to Find Them. Bee in your bonnet Hand of Glory elder
-        wand, spectacles House Cup Bertie Bott’s Every Flavor Beans Impedimenta. Stunning spells tap-dancing spider Slytherin’s Heir
-        mewing kittens Remus Lupin. Palominos scarlet train black robes, Metamorphimagus Niffler dead easy second bedroom. Padma
-        and Parvati Sorting Hat Minister of Magic blue turban remember my last.</p>
-        <span class='expandButton'></span>
-      </div>
-      <div class="article">
-        <h2>React vs Angular vs Vue</h2>
-        <p class="date">Nov 7th, 2017</p>
 
-        <p>Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Squirtle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Wartortle Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit. Blastoise Lorem ipsum dolor sit amet, consectetur adipiscing elit. Caterpie Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit. Metapod Lorem ipsum dolor sit amet, consectetur adipiscing elit. Butterfree
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Weedle Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Kakuna Lorem ipsum dolor sit amet, consectetur adipiscing elit. Beedrill Lorem ipsum dolor sit amet, consectetur adipiscing
+      <p>Boggarts lavender robes, Hermione Granger Fantastic Beasts and Where to Find Them. Bee in your bonnet Hand of
+        Glory elder
+        wand, spectacles House Cup Bertie Bott’s Every Flavor Beans Impedimenta. Stunning spells tap-dancing spider
+        Slytherin’s Heir
+        mewing kittens Remus Lupin. Palominos scarlet train black robes, Metamorphimagus Niffler dead easy second
+        bedroom. Padma
+        and Parvati Sorting Hat Minister of Magic blue turban remember my last.</p>
+      <span class='expandButton'></span>
+    </div>
+    <div class="article">
+      <h2>React vs Angular vs Vue</h2>
+      <p class="date">Nov 7th, 2017</p>
+
+      <p>Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet,
+        consectetur adipiscing
+        elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet,
+        consectetur
+        adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor
+        sit amet,
+        consectetur adipiscing elit. Squirtle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Wartortle Lorem
+        ipsum dolor
+        sit amet, consectetur adipiscing elit. Blastoise Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Caterpie Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Metapod Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Butterfree
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Weedle Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit.
+        Kakuna Lorem ipsum dolor sit amet, consectetur adipiscing elit. Beedrill Lorem ipsum dolor sit amet, consectetur
+        adipiscing
         elit.</p>
 
-        <p>Pidgey Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pidgeotto Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Pidgeot Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rattata Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Raticate Lorem ipsum dolor sit amet, consectetur adipiscing elit. Spearow Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Fearow Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ekans Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Arbok Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pikachu Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Raichu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sandshrew Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Sandslash Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nidoran Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Nidorina Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nidoqueen Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nidoran Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nidorino Lorem ipsum dolor
+      <p>Pidgey Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pidgeotto Lorem ipsum dolor sit amet,
+        consectetur adipiscing
+        elit. Pidgeot Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rattata Lorem ipsum dolor sit amet,
+        consectetur adipiscing
+        elit. Raticate Lorem ipsum dolor sit amet, consectetur adipiscing elit. Spearow Lorem ipsum dolor sit amet,
+        consectetur adipiscing
+        elit. Fearow Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ekans Lorem ipsum dolor sit amet,
+        consectetur adipiscing
+        elit. Arbok Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pikachu Lorem ipsum dolor sit amet,
+        consectetur adipiscing
+        elit. Raichu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sandshrew Lorem ipsum dolor sit amet,
+        consectetur adipiscing
+        elit. Sandslash Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nidoran Lorem ipsum dolor sit amet,
+        consectetur
+        adipiscing elit. Nidorina Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nidoqueen Lorem ipsum dolor
+        sit amet,
+        consectetur adipiscing elit. Nidoran Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nidorino Lorem
+        ipsum dolor
         sit amet, consectetur adipiscing elit. Nidoking Lorem ipsum</p>
-        <span class='expandButton'></span>
-      </div>
-      <div class="article">
-        <h2>Professional Software Development in 2018</h2>
-        <p class="date">Nov 7th, 2017</p>
-        <p>Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor hodor, hodor, hodor
-          hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor hodor, hodor.
-          Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? </p>
-        
-        <p>Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
-          hodor hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR
-          hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor - hodor... Hodor hodor hodor hodor hodor hodor hodor?! Hodor
-          hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? </p>
-        
-        <p>Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
-          Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
-          Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.
-          </p>
-
-        <p>Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
-          hodor hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR
-          hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor - hodor... Hodor hodor hodor hodor hodor hodor hodor?! Hodor
-          hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? </p>
-        <span class='expandButton'></span>
-      </div>
+      <span class='expandButton'></span>
     </div>
-  </body>
+    <div class="article">
+      <h2>Professional Software Development in 2018</h2>
+      <p class="date">Nov 7th, 2017</p>
+      <p>Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor
+        hodor, hodor, hodor
+        hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor
+        hodor, hodor.
+        Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? </p>
+
+      <p>Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor
+        hodor, hodor;
+        hodor hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor! Hodor, hodor. Hodor.
+        Hodor, HODOR
+        hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor - hodor... Hodor hodor hodor hodor hodor hodor
+        hodor?! Hodor
+        hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? </p>
+
+      <p>Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor
+        hodor? Hodor!
+        Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor,
+        hodor.
+        Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor
+        hodor. Hodor.
+      </p>
+
+      <p>Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor
+        hodor, hodor;
+        hodor hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor! Hodor, hodor. Hodor.
+        Hodor, HODOR
+        hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor - hodor... Hodor hodor hodor hodor hodor hodor
+        hodor?! Hodor
+        hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? </p>
+      <span class='expandButton'></span>
+    </div>
+    <div class="article">
+      <h2>AI translation boosted eBay sales more than 10 percent</h2>
+      <p class="date">May 15th, 2019</p>
+      <p>We often hear that artificial intelligence is important for economic growth, and while that claim makes
+        intuitive sense, there isn’t a lot of hard data to back it up. A recent study from economists at MIT and
+        Washington University in St. Louis offers some proof, though, showing how AI tools boost trade by allowing
+        sellers to cross the language barrier.</p>
+
+      <p>The researchers acknowledge that other variables could have caused this increase, but accounted for them in a
+        number of ways. For example, they compared exports in this period to countries where languages not included in
+        eBay’s translation tools are spoken, and controlled for factors like increased marketing spend and length of
+        title listings. The researchers also compared this data with eBay’s rollout of AI translation tools for Russian,
+        Italian, and French. They found similar improvements, and estimate that the introduction of AI translation
+        between countries is equivalent to reducing their distance from one another (a factor that has a big impact on
+        trade volume) by 26 percent.</p>
+      <span class='expandButton'></span>
+    </div>
+    <div class="article">
+      <h2>How social networks are recruiting teenage extremists</h2>
+      <p class="date">May 15th, 2019</p>
+      <p>In March, in the aftermath of the Christchurch shooting, I tried to distinguish between internet problems and
+        platform problems. Internet problems arise from the existence of a free and open network that connects most of
+        the world; platform problems arise from features native to the platform. The fact that anti-vaccination zealots
+        can meet online is an internet problem; the fact that Facebook recommended that new mothers join
+        anti-vaccination groups is a platform problem. The recent rise in white supremacist violence around the world
+        has given us fresh reason to ask which aspects of the problem belong to the entire internet, and which belong to
+        our biggest social networks. It seems apparent that the internet is cultivating loose but potent networks of
+        extremists. But what are the mechanics of this radicalization? And what role could platforms play in
+        discouraging it?</p>
+
+      <p>The researchers acknowledge that other variables could have caused this increase, but accounted for them in a
+        number of ways. For example, they compared exports in this period to countries where languages not included in
+        eBay’s translation tools are spoken, and controlled for factors like increased marketing spend and length of
+        title listings. The researchers also compared this data with eBay’s rollout of AI translation tools for Russian,
+        Italian, and French. They found similar improvements, and estimate that the introduction of AI translation
+        between countries is equivalent to reducing their distance from one another (a factor that has a big impact on
+        trade volume) by 26 percent.</p>
+      <span class='expandButton'></span>
+    </div>
+    <div class="article">
+      <h2>Hulu and Netflix gear up to lose The Office, Friends</h2>
+      <p class="date">May 15th, 2019</p>
+      <p>Disney is set to take full control of Hulu, which means many beloved NBC shows currently streaming on the
+        platform will disappear by 2024. Between that and AT&T CEO Randall Stephenson confirming that some of
+        WarnerMedia’s most popular series would leave Netflix to land exclusively on the company’s upcoming streaming
+        service, the future of streaming is about to change. Or to put it simply, the streaming world that most
+        cord-cutting consumers have grown to know over the last few years is coming to an end. </p>
+
+      <p>Licensing details have become excruciatingly complicated. The reason for this is because some studios don’t own
+        the distribution rights to their shows that have wound up on independent streaming services. For example,
+        Friends was an NBC show that is distributed by Warner Bros. Television, which is now on Netflix. The
+        nitty-gritty also doesn’t particularly matter to millions of subscribers who just want to know where their
+        favorite shows are going to end up, but those details do matter to content companies with certain distribution
+        rights that are launching streaming services this year and next. Both Netflix’s chief content officer Ted
+        Sarandos and Disney CEO Bob Iger have told investors in previous calls that deals with content owners like
+        WarnerMedia and NBCUniversal are being worked out, but don’t expect Friends, The Office, or ER to stick around.
+      </p>
+      <span class='expandButton'></span>
+    </div>
+  </div>
+</body>
+
 </html>

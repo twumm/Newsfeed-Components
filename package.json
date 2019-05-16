@@ -1,0 +1,23 @@
+{
+  "name": "03-components-i",
+  "version": "1.0.0",
+  "description": "In this project we are going to be building a news feed reader. The goal is to have a collapsing menu, and expandable news articles. The HTML and CSS is already done for you, you simply need to connect the pieces. After the CSS is connected it is time to move on to building out our components using JavaScript. We will be adding common functionality and styling to build reusable components.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twumm/Newsfeed-Components.git"
+  },
+  "author": "twumm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twumm/Newsfeed-Components/issues"
+  },
+  "homepage": "https://github.com/twumm/Newsfeed-Components#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  },
+  "dependencies": {}
+}
